@@ -1,1 +1,4 @@
-static/* linguist-vendored
+*.dart linguist-detectable=true
+*.makefile linguist-detectable=false
+*.c++ linguist-detectable=false
+*.cmakefile linguist-detectable=false
