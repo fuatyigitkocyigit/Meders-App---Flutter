@@ -1,0 +1,4 @@
+#Mon Apr 17 13:18:37 TRT 2023
+base.0=/Users/fyk/AndroidStudioProjects/meders_app/build/app/intermediates/dex/profile/mergeDexProfile/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

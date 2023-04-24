@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-merged_res-22:/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-appcompat-1.2.0-13:/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-merged_res-22:/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-appcompat-1.2.0-13:/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    }
+]

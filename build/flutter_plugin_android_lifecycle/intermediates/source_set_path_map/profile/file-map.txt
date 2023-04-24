@@ -1,0 +1,12 @@
+io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-window-java-1.0.0-beta04-0 /Users/fyk/.gradle/caches/transforms-3/006d93cd422dbc43e89591147c2de572/transformed/jetified-window-java-1.0.0-beta04/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-core-1.6.0-1 /Users/fyk/.gradle/caches/transforms-3/4ca28c4a71705f8a687c69dda140a277/transformed/core-1.6.0/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-annotation-experimental-1.1.0-2 /Users/fyk/.gradle/caches/transforms-3/8965c941cf4bee4d72541b965c7c9d39/transformed/jetified-annotation-experimental-1.1.0/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-jetified-window-1.0.0-beta04-3 /Users/fyk/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-main-4 /Users/fyk/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.9/android/src/main/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-profile-5 /Users/fyk/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.9/android/src/profile/res
+io.flutter.plugins.flutter_plugin_android_lifecycle-pngs-6 /Users/fyk/AndroidStudioProjects/meders_app/build/flutter_plugin_android_lifecycle/generated/res/pngs/profile
+io.flutter.plugins.flutter_plugin_android_lifecycle-resValues-7 /Users/fyk/AndroidStudioProjects/meders_app/build/flutter_plugin_android_lifecycle/generated/res/resValues/profile
+io.flutter.plugins.flutter_plugin_android_lifecycle-rs-8 /Users/fyk/AndroidStudioProjects/meders_app/build/flutter_plugin_android_lifecycle/generated/res/rs/profile
+io.flutter.plugins.flutter_plugin_android_lifecycle-mergeProfileResources-9 /Users/fyk/AndroidStudioProjects/meders_app/build/flutter_plugin_android_lifecycle/intermediates/incremental/profile/mergeProfileResources/merged.dir
+io.flutter.plugins.flutter_plugin_android_lifecycle-mergeProfileResources-10 /Users/fyk/AndroidStudioProjects/meders_app/build/flutter_plugin_android_lifecycle/intermediates/incremental/profile/mergeProfileResources/stripped.dir
+io.flutter.plugins.flutter_plugin_android_lifecycle-merged_res-11 /Users/fyk/AndroidStudioProjects/meders_app/build/flutter_plugin_android_lifecycle/intermediates/merged_res/profile

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-merged_res-22:/layout-v21/notification_action.xml",
+        "source": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-core-1.6.0-5:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-merged_res-22:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-core-1.6.0-5:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-merged_res-22:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-core-1.6.0-5:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-merged_res-22:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.amolg.flutterbarcodescanner.flutter_barcode_scanner-core-1.6.0-5:/layout-v21/notification_template_icon_group.xml"
+    }
+]
