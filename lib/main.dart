@@ -73,7 +73,7 @@ class _MyAppState extends State<MyApp> {
     });
 
     sleep(Duration(seconds: 1));
-    scanBarcodeNormal();
+    //scanBarcodeNormal();
   }
 
   Future<void> readExcelFile(String searchString) async {
