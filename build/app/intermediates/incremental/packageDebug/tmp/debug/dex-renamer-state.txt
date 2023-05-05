@@ -1,4 +1,4 @@
-#Thu Apr 20 11:17:33 TRT 2023
+#Fri May 05 11:28:25 TRT 2023
 base.0=/Users/fyk/AndroidStudioProjects/meders_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

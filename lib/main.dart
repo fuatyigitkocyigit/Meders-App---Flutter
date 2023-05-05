@@ -1,3 +1,16 @@
+/*
+    ========================================================================
+    **Meders App**
+    Flutter App (works in both IOS and Android) for Meders Medikal A.Ş.
+    Created By: Fuat Yiğit Koçyiğit
+    Finalization Date: 05.05.2023
+    Contact: fuatkocyigit0706@gmail.com
+    Description: Read product QR codes, find them from the Excel product list
+    and check if they are in the order package list. Update the order package
+    after each scan. App aimed to be used in Meders Medikal A.Ş. warehouse.
+    ========================================================================
+ */
+
 import 'dart:io';
 import 'package:flutter_excel/excel.dart' show ByteData, rootBundle;
 import 'package:excel/excel.dart';
@@ -7,7 +20,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:vibration/vibration.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MaterialApp(home: MyApp(),),);
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key});
@@ -22,7 +35,13 @@ class _MyAppState extends State<MyApp> {
   String bCellValue = '';
   List<String> columnAValues = [];
   List<String> columnBValues = [];
-  List<String> scannedQRs = []; // List to store scanned QR codes
+  List<String> scannedQRs = [];
+  //final List<String> testQRs = ['A', 'B', 'C'];
+  List<String> packageList = ['10147417', '10147385', '10936812'];
+  //First 3 products for Test:
+  //0104025515218487, 0104025515218517, 0104038953847218
+
+  get floatingActionButton => null; // List to store scanned QR codes
 
 
   Future<void> startBarcodeScanStream() async {
@@ -98,7 +117,6 @@ class _MyAppState extends State<MyApp> {
 
       HapticFeedback.vibrate();
 
-
       // Compare the cell value with the search string
       if (cellValue == searchString.trim()) {
         // Get the value in the corresponding B column cell
@@ -113,6 +131,18 @@ class _MyAppState extends State<MyApp> {
           _foundData = bCellValue!;
         });
         //print('test: $bCellValue');
+
+        //Search the found product in packagaeList
+        for(int j = 0; j < packageList.length; j++){
+          if(packageList[j] == bCellValue){
+            print('The product in package is scanned');
+            packageList.remove(bCellValue);
+            break;
+          }
+          else{
+            print('The product is not in package');
+          }
+        }
 
         break;
       }
@@ -131,7 +161,6 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Meders Medikal QR App'),
           leading: Image.asset('assets/logo.png'),
-
           backgroundColor: Colors.redAccent,
         ),
         body: Center(
@@ -184,6 +213,31 @@ class _MyAppState extends State<MyApp> {
             ],
           ),
         ),
+        floatingActionButton: FloatingActionButton.extended(
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertDialog(
+                    title: Text("Packages Left (Malkod Values)"),
+                    content: Column(
+                      //if the packageList is empty, show the text. Else, show the list
+                      children: packageList.isEmpty
+                          ? [Text('No package left!')]
+                          : List.generate(
+                              packageList.length,
+                              (index) => Text(packageList[index]),
+                            ),
+                    ),
+    );
+    },
+    );
+    },
+            icon: const Icon(Icons.shopping_cart),
+            label: const Text('Show the Package'),
+            backgroundColor: Colors.redAccent,
+            splashColor: Colors.greenAccent,
+      ),
       ),
     );
   }
